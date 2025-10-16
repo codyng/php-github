@@ -1,0 +1,14 @@
+{
+    "name": "codyng/php-github",
+    "autoload": {
+        "psr-4": {
+            "Codyng\\PhpGithub\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cody"
+        }
+    ],
+    "require": {}
+}
