@@ -1,2 +1,2 @@
 <?php
-echo 'PHP + GitHub + Auto-detect runtime';
+echo 'PHP + GitHub + Auto-detect runtime (Using Apache)';
