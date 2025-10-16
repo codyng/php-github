@@ -1,0 +1,34 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Env files (secrets)
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS trash
+Thumbs.db
+ehthumbs.db
+Desktop.ini
