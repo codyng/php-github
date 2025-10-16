@@ -1,0 +1,13 @@
+# cloudbuild.yaml
+steps:
+  - name: 'gcr.io/k8s-skaffold/pack'
+    entrypoint: pack
+    args:
+      - build
+      - '${LOCATION}-docker.pkg.dev/$PROJECT_ID/phpweb/site:${SHORT_SHA}'
+      - '--builder=gcr.io/buildpacks/builder'
+      - '--env=BP_PHP_SERVER=nginx'
+      - '--env=GOOGLE_CUSTOM_NGINX_CONFIG=nginx.conf'
+
+images:
+  - '${LOCATION}-docker.pkg.dev/$PROJECT_ID/phpweb/site:${SHORT_SHA}'
