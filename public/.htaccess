@@ -1,6 +1,8 @@
 RewriteEngine On
 RewriteBase /
 
+RewriteRule ^htcheck$ pi.php [L]
+
 # Serve existing files and directories as-is
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
